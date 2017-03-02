@@ -1,7 +1,7 @@
 
 <!doctype html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="./jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="goodbyeinternet.js"></script>
 <html id='goodbyeinternet'>
 <head>
@@ -49,5 +49,23 @@
     <p>Why would anyone write a script that destroys the website it lives in? That would be entirely useless!</p>
     <p><a href="./selfdes.html">reload...</a></p>
 </div>
+
+<script type="text/javascript">
+//  $( document ).ready(function(){ ... wait until document is loaded
+$( document ).ready(function(){
+
+
+//  setTimeout... 5000); wait five seconds 
+
+ setTimeout(function(){
+//          selfdestruct with severity 3, mutationrate 25, in mode 2 ("mystic")
+
+         selfdestruct(1,1,2);
+     }, 
+     5000);
+ });
+</script>
+
+
 </body>
 </html>
